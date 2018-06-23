@@ -26,4 +26,13 @@ public class SortTestHelper{
         return arr;
     }
 
+    /**
+     * 两个变量交换值
+     * @param i 变量索引
+     * @param j 变量索引
+     */
+    public static void swap(int[] arr ,int i, int j){
+        if (arr[i] == arr[j]){ return; }
+        int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp;
+    }
 }
