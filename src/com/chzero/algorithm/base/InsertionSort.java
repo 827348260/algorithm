@@ -12,6 +12,19 @@ import java.util.Arrays;
  */
 public class InsertionSort{
 
+    public static void insertionSort(int[] arr, int left, int right){
+        for (int i = left; i <= right; i++){
+            //暂存需要插入的值
+            int temp = arr[i];
+            int j;
+            //寻找元素arr[i]合适的插入位置
+            for (j = i; j > 0 && arr[j - 1] > temp; j--){
+                arr[j] = arr[j - 1];
+            }
+            arr[j] = temp;
+        }
+    }
+
     public static void insertionSort(int[] arr, int count){
         for (int i = 1; i < count; i++){
             //暂存需要插入的值
