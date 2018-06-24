@@ -8,6 +8,7 @@ import java.util.Arrays;
  * @date 2018-06-23 18:17
  * @email 827348260@qq.com
  * @description 归并排序 o(nlogn) (自顶向下 和 自底向上) 当划分的到一定数量时, 可使用其他排序方式进行排序
+ * 用到了分治的思想
  */
 public class MergeSort{
 
